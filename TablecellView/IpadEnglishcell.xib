@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IpadEnglishcell" id="aeo-gZ-cMv" customClass="IpadEnglishcell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aeo-gZ-cMv" id="hwl-Lt-uE3">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CUI-6i-T9C">
+                        <rect key="frame" x="2" y="2" width="194" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="7xn-Mr-ygV"/>
+                            <constraint firstAttribute="width" constant="194" id="E3N-0q-cJN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjD-Kg-tUm">
+                        <rect key="frame" x="4" y="122" width="184" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WjD-Kg-tUm" firstAttribute="top" secondItem="CUI-6i-T9C" secondAttribute="bottom" constant="5" id="4Cn-Y5-2cN"/>
+                    <constraint firstItem="CUI-6i-T9C" firstAttribute="leading" secondItem="hwl-Lt-uE3" secondAttribute="leadingMargin" constant="-6" id="5Nc-n9-l2l"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CUI-6i-T9C" secondAttribute="trailing" constant="-4" id="Bga-dL-iDj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WjD-Kg-tUm" secondAttribute="trailing" constant="4" id="NMU-kd-EZT"/>
+                    <constraint firstItem="WjD-Kg-tUm" firstAttribute="leading" secondItem="hwl-Lt-uE3" secondAttribute="leadingMargin" constant="-4" id="SFo-54-0xu"/>
+                    <constraint firstItem="CUI-6i-T9C" firstAttribute="top" secondItem="hwl-Lt-uE3" secondAttribute="topMargin" constant="-6" id="pp2-NL-tnk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgheader" destination="CUI-6i-T9C" id="u63-zg-egy"/>
+                <outlet property="lbltitle" destination="WjD-Kg-tUm" id="xaN-cU-7UO"/>
+            </connections>
+            <point key="canvasLocation" x="135" y="-84.5"/>
+        </tableViewCell>
+    </objects>
+</document>

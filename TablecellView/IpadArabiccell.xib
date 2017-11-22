@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IpadArabiccell" id="1sk-Cg-Jyb" customClass="IpadArabiccell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1sk-Cg-Jyb" id="rDB-ur-T22">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYx-kv-aMD">
+                        <rect key="frame" x="2" y="2" width="194" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="194" id="KcF-9U-sHu"/>
+                            <constraint firstAttribute="height" constant="118" id="vAs-z4-w3i"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-UV-Kok">
+                        <rect key="frame" x="30" y="120" width="165" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="riV-sr-0T2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uYx-kv-aMD" firstAttribute="top" secondItem="rDB-ur-T22" secondAttribute="topMargin" constant="-6" id="1nb-jX-6ey"/>
+                    <constraint firstItem="uYx-kv-aMD" firstAttribute="leading" secondItem="rDB-ur-T22" secondAttribute="leadingMargin" constant="-6" id="5sS-qf-ueE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uYx-kv-aMD" secondAttribute="trailing" constant="-4" id="L0y-FA-Uhz"/>
+                    <constraint firstItem="b0K-UV-Kok" firstAttribute="top" secondItem="uYx-kv-aMD" secondAttribute="bottom" constant="-2" id="U5K-bs-b8t"/>
+                    <constraint firstItem="b0K-UV-Kok" firstAttribute="leading" secondItem="rDB-ur-T22" secondAttribute="leadingMargin" constant="22" id="b2x-dJ-Za9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="b0K-UV-Kok" secondAttribute="trailing" constant="-3" id="i3I-eA-b7b"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="b0K-UV-Kok" secondAttribute="bottom" constant="-4" id="oXM-GU-iIR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgheader" destination="uYx-kv-aMD" id="yZt-oe-Fo3"/>
+                <outlet property="lbltitle" destination="b0K-UV-Kok" id="Xe2-ba-PKW"/>
+            </connections>
+            <point key="canvasLocation" x="135" y="-84"/>
+        </tableViewCell>
+    </objects>
+</document>
