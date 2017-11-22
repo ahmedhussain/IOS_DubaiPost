@@ -120,7 +120,7 @@
                 [reach stopNotifier];
             };
             [reachability startNotifier];
-             NSLog(@"DUBAIPOST MBPROGRESS 1");
+           
             [MBProgressHUD hideHUDForView:self.view animated:YES];
            
             
@@ -272,7 +272,8 @@
     
     NSURL *url = [[NSURL alloc]initWithString:URLString];
     dispatch_async(dispatch_get_main_queue(), ^{
-       NSLog(@"DUBAIPOST MBPROGRESS 2");
+      
+        
         [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         
         EMReachability *reachability = [EMReachability reachabilityWithHostname:@"media.dubaipost.ae"];
@@ -290,7 +291,7 @@
                   // handle response
                   if (data == nil) {
                       NSLog(@"DUBAIPOST : VC : fetchdata :  NIL ");
-                      NSLog(@"DUBAIPOST MBPROGRESS 3");
+                      
                       [MBProgressHUD hideHUDForView:self.view animated:YES];
                       
                       [self connectiontext];
@@ -321,7 +322,7 @@
             
             NSLog(@"DUBAIPOST : VC : fetchdata :  unreachableBlock ");////
             [MBProgressHUD hideHUDForView:self.view animated:YES];
-             NSLog(@"DUBAIPOST MBPROGRESS 5");
+            
             [self connectiontext];
             ///
             [reach stopNotifier];
@@ -376,7 +377,7 @@
                     dispatch_async(dispatch_get_main_queue(), ^{
                         sleep(2);
                         [MBProgressHUD hideHUDForView:self.view animated:YES];
-                         NSLog(@"DUBAIPOST MBPROGRESS 6");
+                        
                     });
                 });
                 
@@ -396,7 +397,7 @@
         reachability.unreachableBlock = ^(EMReachability *reach) {
             
             NSLog(@"DUBAIPOST : viewDidLoad :  unreachableBlock ");////
-            NSLog(@"DUBAIPOST MBPROGRESS 7");
+            
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             
             [self connectiontext];
@@ -404,7 +405,7 @@
             [reach stopNotifier];
         };
         [reachability startNotifier];
-         NSLog(@"DUBAIPOST MBPROGRESS 8");
+        
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         
     });
@@ -466,7 +467,7 @@
         }
         
     }
-    NSLog(@"DUBAIPOST MBPROGRESS 9");
+   
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -486,7 +487,7 @@
         reachability.unreachableBlock = ^(EMReachability *reach) {
             
             NSLog(@"DUBAIPOST : viewDidLoad :  unreachableBlock ");////
-            NSLog(@"DUBAIPOST MBPROGRESS 10");
+           
             [MBProgressHUD hideHUDForView:self.view animated:YES];
             [self connectiontext];
             
@@ -495,7 +496,8 @@
             [reach stopNotifier];
         };
         [reachability startNotifier];
-        NSLog(@"DUBAIPOST MBPROGRESS 11");
+       
+    
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         
     });
